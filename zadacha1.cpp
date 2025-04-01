@@ -2,7 +2,7 @@
 
 #define MODE 1
 
-int add(int a, int b);
+int add(int a, int b) { return a + b; }
 
 int main()
 {
@@ -32,4 +32,3 @@ int main()
 	return 0;
 }
 
-int add(int a, int b) { return a + b; }
