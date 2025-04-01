@@ -1,7 +1,8 @@
 ﻿#include <iostream>
 
 #define MODE 1
-#define ADD(a, b) ((a) + (b))
+
+int add(int a, int b);
 
 int main()
 {
@@ -22,13 +23,13 @@ int main()
 	std::cin >> a;
 	std::cout << "Введите число 2: ";
 	std::cin >> b;
-	std::cout << "Результат сложения: " << ADD(a, b) << std::endl;
+	std::cout << "Результат сложения: " << add(a, b) << std::endl;
 
 #else
 	std::cout << "Неизвестный режим. Завершение работы" << std::endl;
 #endif
 
-
-
 	return 0;
 }
+
+int add(int a, int b) { return a + b; }
